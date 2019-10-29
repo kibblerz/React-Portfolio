@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2D46AE;
+}
+body, html {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root, #App {
+  width: 100%;
+  height: 100%;
+}
+
+#App {
+  background-color: black;
+  margin: 0;
+  color: white;
+  padding: 0;
+}
+
+#bodyContainer {
+  margin: 1em;
+  display: grid;
+  height: 100%;
+  width: 95%;
+  grid-template: 5% 5% 5% 85%/40% 20% 40%;
+  grid-row-gap: 0em;
+  grid-column-gap: 0em;
+  justify-content: stretch;
+  color: white;
+  
+}
+
+#bodyContainer > div {
+  background-color: #39AAB0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: .01em solid black;
+
+}
+
+
+.activated {
+  transition-property: grid-row, grid-column;
+  grid-row: 4/5;
+  grid-column: 1/4;
+  padding: 1em;
+  border-radius: 0em !important;
+}
+
+#bodyContainer div h3  {
+  margin: auto;
+
+}
+#Header {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  border-radius: 0em !important;
+}
